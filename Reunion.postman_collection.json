@@ -1,0 +1,339 @@
+{
+	"info": {
+		"_postman_id": "c8a0c4f9-066a-4935-993a-94474d96d284",
+		"name": "Reunion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16398158"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "User Resgiteration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"Shubham Kumar 11\",\r\n    \"email\":\"shubhamkofficial111@gmail.com\",\r\n    \"password\":\"ShubhamKumar8442@#\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://shubhamreunionproject.herokuapp.com/api/register",
+							"protocol": "https",
+							"host": [
+								"shubhamreunionproject",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"shubhamkofficial1@gmail.com\",\r\n    \"password\":\"ShubhamKumar8442@#\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://shubhamreunionproject.herokuapp.com/api/authenticate",
+							"protocol": "https",
+							"host": [
+								"shubhamreunionproject",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"authenticate"
+							]
+						},
+						"description": "User Can login here\r\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Follow User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://shubhamreunionproject.herokuapp.com/api/follow/636a4189954c79ce7c9632ad",
+							"protocol": "https",
+							"host": [
+								"shubhamreunionproject",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"follow",
+								"636a4189954c79ce7c9632ad"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Unfollow User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://shubhamreunionproject.herokuapp.com/api/unfollow/636a4189954c79ce7c9632ad",
+							"protocol": "https",
+							"host": [
+								"shubhamreunionproject",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"unfollow",
+								"636a4189954c79ce7c9632ad"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://shubhamreunionproject.herokuapp.com/api/user",
+							"protocol": "https",
+							"host": [
+								"shubhamreunionproject",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://shubhamreunionproject.herokuapp.com/api/logout",
+							"protocol": "https",
+							"host": [
+								"shubhamreunionproject",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Posts",
+			"item": [
+				{
+					"name": "Create Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Train gaadi\",\r\n    \"description\":\"Chuk chuk\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://shubhamreunionproject.herokuapp.com/api/posts",
+							"protocol": "https",
+							"host": [
+								"shubhamreunionproject",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"body\":\"Jai Ho\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://shubhamreunionproject.herokuapp.com/api/comment/636a5db185c79f15a8bd4eab",
+							"protocol": "https",
+							"host": [
+								"shubhamreunionproject",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"comment",
+								"636a5db185c79f15a8bd4eab"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Like Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://shubhamreunionproject.herokuapp.com/api/like/636a5db185c79f15a8bd4eab",
+							"protocol": "https",
+							"host": [
+								"shubhamreunionproject",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"like",
+								"636a5db185c79f15a8bd4eab"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Unlike Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://shubhamreunionproject.herokuapp.com/api/unlike/636a5db185c79f15a8bd4eab",
+							"protocol": "https",
+							"host": [
+								"shubhamreunionproject",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"unlike",
+								"636a5db185c79f15a8bd4eab"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Post",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://shubhamreunionproject.herokuapp.com/api/posts/636a5fa985c79f15a8bd4ef0",
+							"protocol": "https",
+							"host": [
+								"shubhamreunionproject",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"posts",
+								"636a5fa985c79f15a8bd4ef0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Posts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://shubhamreunionproject.herokuapp.com/api/posts/all_posts/",
+							"protocol": "https",
+							"host": [
+								"shubhamreunionproject",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"posts",
+								"all_posts",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Post By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://shubhamreunionproject.herokuapp.com/api/posts/636a5db185c79f15a8bd4eab",
+							"protocol": "https",
+							"host": [
+								"shubhamreunionproject",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"posts",
+								"636a5db185c79f15a8bd4eab"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

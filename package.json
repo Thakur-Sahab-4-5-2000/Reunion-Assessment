@@ -4,8 +4,8 @@
   "description": "Reunion Assesment",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon src/index.js",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
   "author": "Shubham Kumar",
   "license": "ISC",
